@@ -12,3 +12,8 @@ def print_custom_separator(char, length):
 
 def print_labeled_separator(label, char="*", width=30):
     print(label.center(width, char))
+
+def print_box(message, char="*"):
+    print(char * (len(message) + 4))
+    print(f"* {message} *")
+    print(char * (len(message) + 4))
