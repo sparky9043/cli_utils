@@ -9,3 +9,6 @@ def print_char_separator(char):
 
 def print_custom_separator(char, length):
     print(char * length)
+
+def print_labeled_separator(label, char="*", width=30):
+    print(label.center(width, char))
