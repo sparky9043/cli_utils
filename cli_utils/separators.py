@@ -6,3 +6,6 @@ def print_separator():
 
 def print_char_separator(char):
     print(char * 30)
+
+def print_custom_separator(char, length):
+    print(char * length)
