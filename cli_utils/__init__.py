@@ -5,4 +5,5 @@ from .separators import (
     print_custom_separator,
     print_labeled_separator,
     print_box,
+    print_ascii_art,
 )
