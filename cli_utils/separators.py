@@ -17,3 +17,27 @@ def print_box(message, char="*"):
     print(char * (len(message) + 4))
     print(f"* {message} *")
     print(char * (len(message) + 4))
+    
+def print_ascii_art():
+    RED = '\033[91m'
+    BLUE = '\033[94m'
+    RESET = '\033[0m'  # This resets the color back to default
+    
+    top_of_arc = """
+   ___ _______________________
+  |===|=======================|
+  |||||_|_|_|_|_|_|_|_|_|_|_|_|
+ [___[_________________________]"""
+    middle_of_arc = """  |---|-------|--_-_--|-------|
+  |[ ]| [:.:] |,'`. `.| [:.:] |
+  ====|========    ||:|========"""
+    
+    bottom_of_arc = """  ||^||  {$}  |    ||:|  {$}  |
+  ||:|| (:..) |    ||:| (:.:) |
+  ||:||=======|    ||:|=======|
+  ||:||_______|    ||:|_______|"""
+  
+    print(f"{RED}{top_of_arc}")
+    print(f"{RESET}{middle_of_arc}")
+    print(f"{BLUE}{bottom_of_arc}")
+    
